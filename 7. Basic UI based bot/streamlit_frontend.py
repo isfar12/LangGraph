@@ -8,7 +8,8 @@ CONFIG={
             "thread_id":"thread_1"
         }
 }
-if "message_history" not in st.session_state:
+
+if "message_history" not in st.session_state: # this stores the chat history if not reloaded manually in the browser
     st.session_state["message_history"]=[]
 
 for message in st.session_state["message_history"]:
